@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <button onclick="window.location.href='login'" id="logout-btn">Logout</button>
+
+    <h1>Admin Dashboard</h1>
+    <div class="card" id="user-section">
+        <h2>All Users</h2>
+        <ul id="user-list" class="list"></ul>
+    </div>
+    <div class="card" id="blog-section">
+        <h2>All Blogs</h2>
+        <ul id="blog-list" class="list"></ul>
+        <p>Total Blogs: <span id="total-blogs"></span></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

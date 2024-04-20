@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin-bottom: 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+.container {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.blog-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.blog-item p {
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.blog-item button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.blog-item button:hover {
+    background-color: #0056b3;
+}
+
+.blog-item button.edit {
+    margin-right: 10px;
+}
+
+.blog-item button.delete {
+    background-color: #dc3545;
+}
+
+.blog-item button.delete:hover {
+    background-color: #c82333;
+}
