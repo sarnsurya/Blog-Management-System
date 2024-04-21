@@ -33,7 +33,17 @@
     ```
 
 2. **Access the Website**: Open your web browser and navigate to `http://localhost:3000` to access the Blog Management System.
-<!-- 
-### Contributing
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Express.js
+- MongoDB
+
+
+<!-- ### Contributing
 
 Contributions are welcome! If you have any suggestions or find any issues, feel free to open an issue or create a pull request. -->
