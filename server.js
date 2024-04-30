@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const session = require("express-session");
+const cookieParser = require("cookie-parser");
 const User = require("./backend/models/user");
 const Blog = require("./backend/models/blog");
 
@@ -10,10 +11,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/frontend"));
+app.use(cookieParser());
 app.use(
   session({
-    secret: "8098688981",
-    resave: false,
+    secret: "admin",
+    resave: true,
     saveUninitialized: true,
   })
 );
@@ -64,6 +66,7 @@ app.post("/login", async (req, res) => {
       const user = await User.findOne({ email, password });
       if (user) {
         req.session.userId = user._id;
+        req.session.save();
         res.status(200).send("Login successful");
       } else {
         throw new Error("Invalid email or password");
