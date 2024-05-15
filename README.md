@@ -25,14 +25,18 @@
     ```
 
 ### Usage
+1. **Start your MongoDb server**: Run the following command to start the server:
 
-1. **Start the Server**: Run the following command to start the server:
+    ```bash
+    mongod
+    ```
+2. **Start the Server**: Run the following command to start the server:
 
     ```bash
     nodemon server.js
     ```
 
-2. **Access the Website**: Open your web browser and navigate to `http://localhost:3000` to access the Blog Management System.
+3. **Access the Website**: Open your web browser and navigate to `http://localhost:3000` to access the Blog Management System.
 
 ## Technologies Used
 
